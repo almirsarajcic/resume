@@ -1,0 +1,77 @@
+
+% This is a modified version of res2.tex found on:
+% http://www.rpi.edu/dept/arc/training/latex/resumes/
+
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res}
+% the margin option causes section titles to appear to the left of body text
+%\topmargin= -0.5in %added this to decrease top margin
+
+% The next 3 lines modify the text box height and distance from top of page.
+% See http://en.wikibooks.org/wiki/LaTeX/Page_Layout#Page_dimensions
+\voffset=-0.3in
+\headheight=0pt
+\textheight=10.5in
+
+\textwidth=5.2in % increase textwidth to get smaller right margin
+
+\usepackage{ulem} % needed to make underlines work across hfill's
+\usepackage{hyperref} % used for hyperlinks
+\usepackage{helvetica} % uses helvetica postscript font (helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage{enumitem}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Almir Sarajcic}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{Sarajevo, Bosnia and Herzegovina}
+ \moveleft.5\hoffset\centerline{\href{mailto:TB_Almir@hotmail.com}{TB\_Almir@hotmail.com}}
+
+\begin{resume}
+
+\section{Overview}
+  Full stack web developer with a preference to REST-style modelling of applications. Started learning programming with BASIC, C and C++, but became more interested in web development using PHP and JavaScript. Later discovered agile development and fell in love with Ruby on Rails.
+
+  I enjoy working in teams and I prefer small companies. I have experience working remotely in a startup. I also work as a freelancer.
+
+\section{Experience}
+\uline{{\bf Web Developer}, Social Eddy, McAllen, Texas (telecommute)
+  \hfill Sep 2012 - Nov 2013}\vspace{3pt}
+Social Eddy is a content marketing tool that helps users manage social accounts and curate content. I was hired into remote team to help finishing the application created in PHP and MySQL with a lot of Javascript.
+\vspace{3pt}
+\begin{itemize} \itemsep -1pt % reduce space between lines
+  \item Created and maintained libraries for communication with social networks' APIs
+  \item Worked on analytics - data collection and visualization
+  \item Optimized large SQL queries
+\end{itemize}
+
+
+\section{Skills}
+\begin{itemize}[label={}, leftmargin=0cm, itemsep=0cm]
+  \item HTML
+  \item CSS
+  \item JavaScript
+  \item Ruby
+  \item PHP
+  \item Ruby on Rails
+  \item Kohana
+  \item Laravel
+  \item CodeIgniter
+  \item cakePHP
+\end{itemize}
+
+\section{Languages}
+\begin{itemize}[label={}, leftmargin=0cm, itemsep=0cm]
+  \item Bosnian (native)
+  \item English (full professional proficiency)
+\end{itemize}
+
+\end{resume}
+\end{document}
